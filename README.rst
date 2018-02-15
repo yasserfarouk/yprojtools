@@ -16,7 +16,9 @@ the following:
 
 1. Initialize the helpers by running
 
-        python yprojhelpers/init\_helpers.py
+::
+
+    python yprojhelpers/init_helpers.py
 
 Now you are ready to use the tools for managing your project. The main
 services provided are:
