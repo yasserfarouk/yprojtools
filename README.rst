@@ -8,9 +8,11 @@ the following:
 1. Add this project as a submodule to your project by executing the
    following on the root of your project
 
-        git submodule add
-        https://www.github.com/yasserfarouk/yprojhelpers yprojhelpers
-        git submodule init git submodule update --recursive
+::
+
+    git submodule add https://www.github.com/yasserfarouk/yprojhelpers yprojhelpers
+    git submodule init
+    git submodule update --recursive
 
 1. Initialize the helpers by running
 
@@ -22,21 +24,29 @@ services provided are:
 -  Converting your README file to reStructuredText format to be usable
    in pypi. To do that run:
 
-        python yprojhelpers/init\_helpers.py
+::
+
+    python yprojhelpers/init_helpers.py
 
 -  Pumping the version number. That is necessary when you want to make a
    new upload to pypi
 
-        python yprojhelpers/pump\_version\_number.py
+::
+
+    python yprojhelpers/pump_version_number.py
 
 -  Updating your documents. We use Sphinx and support both
    reSructuredText and Numpy/Google formats for docs. Noticet that the
    generated documentations will only have doc-string based docs and you
    have to add your own documentation as needed
 
-        python update\_doc.py
+::
+
+    python update_doc.py
 
 -  This is the *most important script* and it uploads the project to
    pypi making it installable using pip install.
 
-        python yprojtools/pypi.py
+::
+
+    python yprojtools/pypi.py
