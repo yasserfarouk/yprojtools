@@ -1,0 +1,12 @@
+twine
+sphinx
+sphinxcontrib-napoleon
+pipreqs
+sphinx-autodoc-annotation
+numpydoc
+sphinx-autodoc-typehints
+guzzle_sphinx_theme
+sphinx-automodapi
+pypandoc
+pipenv
+#sphinxcontrib-fulltoc

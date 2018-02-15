@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+"""Converts README file from markdown to restructured text.,"""
+import pypandoc
+import os
+import sys
+
+# converts markdown to reStructured
+loc = '..'
+if len(sys.argv) > 1:
+    loc = sys.argv[1]
+    if loc.endswith('README'):
+        loc = loc[:-len('README')]
+
+z = pypandoc.convert(os.path.join(loc, 'README'), 'rst', format='markdown')
+# writes converted file
+with open(os.path.join(loc, 'README.rst'), 'w') as outfile:
+    outfile.write(z)
